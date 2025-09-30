@@ -19,6 +19,9 @@ import updatesIcon from './icons/updates.svg';
 import uploadIcon from './icons/upload.svg';
 import arrowIcon from './icons/arrow.svg';
 import downloadIcon from './icons/download.svg';
+import backIcon from './icons/back.svg';
+import commentIcon from './icons/comment.svg';
+import emojiIcon from './icons/emoji.svg';
 
 export const icons = {
   createIcon,
@@ -39,6 +42,9 @@ export const icons = {
   updatesIcon,
   arrowIcon,
   downloadIcon,
+  backIcon,
+  commentIcon,
+  emojiIcon,
 };
 
 // ITEMS (ImageKit paths)

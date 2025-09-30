@@ -1,0 +1,110 @@
+/* Comment container */
+.user-comment {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 8px 16px;
+  border-bottom: 1px solid #eee;
+}
+
+.user-img-comment {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 8px 12px;
+  border-bottom: 1px solid #eee;
+}
+
+.user-img-comment img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.user-img-comment span {
+  flex: 1;
+  font-size: 14px;
+  color: #333;
+  line-height: 1.4;
+}
+
+/* Comment form */
+.comment-form {
+  display: flex;
+  align-items: flex-end;
+  gap: 8px;
+  padding: 8px 12px;
+  border-top: 1px solid #eee;
+  background: #fff;
+  position: relative;
+  overflow: visible;
+}
+
+.comment-textarea {
+  flex: 1;
+  resize: none;
+  border: none;
+  outline: none;
+  padding: 8px 12px;
+  font-size: 14px;
+  border-radius: 16px;
+  background: #f5f5f5;
+  line-height: 1.4;
+  max-height: 150px;
+  overflow-y: auto;
+}
+
+/* Emoji button */
+.emoji {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.emoji img {
+  width: 22px;
+  height: 22px;
+}
+
+/* Emoji picker */
+.emoji-picker {
+  max-height: 90vh; /* scroll if too tall */
+  width: min(300px, 90vw); /* responsive width */
+  overflow-y: auto;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  border-radius: 8px;
+  background: #fff;
+  padding: 0;
+  position: absolute;
+  z-index: 1000;
+}
+
+/* Close button inside picker */
+.emoji-close-button {
+  text-align: right;
+  padding: 4px 8px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+  border-bottom: 1px solid #eee;
+}
+
+/* Post button */
+.comment-button {
+  background: #e60023;
+  color: #fff;
+  border: none;
+  padding: 6px 14px;
+  border-radius: 16px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+}
+
+.comment-button:disabled {
+  opacity: 0.5;
+  cursor: default;
+}
