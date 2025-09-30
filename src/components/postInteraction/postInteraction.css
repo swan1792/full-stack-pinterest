@@ -1,0 +1,40 @@
+/* postInteraction.css */
+.postInteractions {
+  position: relative; /* ensures absolute children are anchored here if needed */
+  width: 100%;
+  display: flex;
+  justify-content: space-between; /* spread icons and profile+save */
+  align-items: center;
+  padding: 8px 16px;
+}
+
+.postInteractionscontainer {
+  display: flex;
+  gap: 12px;
+}
+
+.corner-profile-save {
+  position: absolute;   /* stick it to the top-right corner */
+  top: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.corner-profile-save .postUser {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  text-decoration: none;
+  color: #333;
+}
+
+.corner-profile-save button {
+  padding: 6px 12px;
+  border-radius: 32px;
+  border:none;
+  background: #e60023;
+  color: white;
+  cursor: pointer;
+}

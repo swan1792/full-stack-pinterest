@@ -1,0 +1,117 @@
+/* postPage.css */
+
+.postPage {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  background: #fafafa;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+/* Container for the post */
+.postContainer {
+  position: relative;   /* anchor for backIcon */
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+  max-width: 1200px;
+  width: 100%;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  overflow: hidden;
+  padding: 0;
+}
+
+/* Back icon floating over image */
+.backIcon {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  cursor: pointer;
+  z-index: 20;
+  background: rgba(255, 255, 255, 0.8); /* round background */
+  padding: 6px;
+  border-radius: 50%;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.backIcon img {
+  width: 24px;
+  height: 24px;
+  filter: brightness(0) invert(0.5);
+  transition: 0.2s ease;
+}
+
+.backIcon img:hover {
+  filter: brightness(0) invert(0.2);
+}
+
+/* Image container */
+.postImage {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  z-index: 0; /* keep image below back icon */
+}
+
+.postImage .img {
+  max-width: 600px;   /* limit width */
+  max-height: 80vh;   /* limit height */
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+/* Post details container */
+.postDetails {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 12px;
+}
+
+/* User info link */
+.postUser {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+}
+
+.postUser img {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: 2px solid #eee;
+  object-fit: cover;
+}
+
+/* Responsive layout for mobile */
+@media (max-width: 900px) {
+  .postContainer {
+    flex-direction: column;
+    padding: 12px;
+  }
+
+  .postImage {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .postDetails {
+    width: 100%;
+  }
+
+  .backIcon {
+    top: 12px;
+    left: 12px;
+  }
+}

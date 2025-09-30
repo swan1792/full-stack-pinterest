@@ -1,13 +1,12 @@
 import "./app.css";
 import Homepage from "./routes/homePage/HomePage.jsx"
 import CreatePage from "./routes/createPage/createPage.jsx";
-import PostPage from "./routes/postPage/postPage.jsx";
+import PostPage from "./routes/postPage/PostPage.jsx";
 import ProfilePage from "./routes/profilePage/profilePage.jsx";
 import SearchPage from "./routes/searchPage/searchPage.jsx";
 import AuthPage from "./routes/authPage/authPage.jsx";
 import {Routes, Route} from "react-router-dom"
 import MainLayout from "./routes/layouts/MainLayout.jsx";
-import { ImageKitProvider } from '@imagekit/react';
 
 const App = () => {
 

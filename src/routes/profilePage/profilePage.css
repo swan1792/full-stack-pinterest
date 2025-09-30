@@ -1,0 +1,174 @@
+/* profilePage.css */
+
+.profilePage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 32px 16px;
+  max-width: 960px;
+  margin: 0 auto;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Avatar */
+.profile-avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-bottom: 16px;
+}
+
+.profile-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Name & Username */
+.profile-name {
+  font-size: 24px;
+  font-weight: 600;
+  margin: 8px 0 4px;
+  color: #111;
+}
+
+.profile-username {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 4px;
+}
+
+.profile-stats {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+/* Action Buttons */
+.profile-actions {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.btn,
+.icon-btn {
+  padding: 8px 16px;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.btn {
+  background: #e60023;
+  color: white;
+  font-weight: 600;
+}
+
+.btn:hover {
+  background: #ad081b;
+}
+
+.btn.follow {
+  background: #e60023;
+}
+
+.btn.unfollow {
+  background: #ddd;
+  color: #111;
+}
+
+.btn.unfollow:hover {
+  background: #ccc;
+}
+
+.icon-btn {
+  width: 36px;
+  height: 36px;
+  background: #f1f1f1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+.icon-btn:hover {
+  background: #e1e1e1;
+}
+
+/* Tabs */
+.profile-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  margin-bottom: 24px;
+  border-bottom: 1px solid #ddd;
+  width: 100%;
+  max-width: 600px;
+}
+
+.tab {
+  position: relative;
+  padding: 12px 0;
+  font-size: 16px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #555;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.tab:hover {
+  color: #111;
+}
+
+.tab.active {
+  color: #111;
+  font-weight: 600;
+}
+
+.tab.active::after {
+  content: "";
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: #111;
+  border-radius: 2px 2px 0 0;
+}
+
+/* Boards/Gallery/Collections container */
+.boards,
+.gallery,
+.collections {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 16px;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .profile-avatar {
+    width: 90px;
+    height: 90px;
+  }
+
+  .profile-name {
+    font-size: 20px;
+  }
+
+  .profile-actions {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .profile-tabs {
+    gap: 16px;
+  }
+}
