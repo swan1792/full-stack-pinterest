@@ -1,0 +1,185 @@
+/* Container */
+.login-container {
+  max-width: 360px;
+  margin: 40px auto;
+  padding: 24px;
+  background: #fff;
+  border-radius: 12px;
+  text-align: center;
+  font-family: "Segoe UI", Arial, sans-serif;
+  color: #333;
+}
+
+.login-title {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+/* Input fields */
+.form-group {
+  position: relative;
+  margin-bottom: 14px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+  outline: none;
+}
+
+.form-group input:focus {
+  border-color: #e60023;
+}
+
+.password-group {
+  display: flex;
+  align-items: center;
+}
+
+.toggle-password {
+  position: absolute;
+  right: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+/* Links */
+.forgot-link {
+  display: block;
+  text-align: right;
+  font-size: 13px;
+  color: #0066cc;
+  text-decoration: none;
+  margin-bottom: 16px;
+}
+
+.forgot-link:hover {
+  text-decoration: underline;
+}
+
+/* Buttons */
+.login-btn {
+  width: 100%;
+  padding: 12px;
+  background: #e60023;
+  color: #fff;
+  border: none;
+  border-radius: 24px;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-bottom: 16px;
+}
+
+.login-btn:hover {
+  background: #cc0020;
+}
+
+.divider {
+  font-size: 14px;
+  color: #888;
+  margin: 12px 0;
+  position: relative;
+}
+
+.divider::before,
+.divider::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 40%;
+  height: 1px;
+  background: #ddd;
+}
+
+.divider::before {
+  left: 0;
+}
+
+.divider::after {
+  right: 0;
+}
+
+.google-btn {
+  width: 100%;
+  padding: 10px;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+
+.google-btn img {
+  width: 20px;
+  height: 20px;
+}
+
+.qr-btn {
+  width: 100%;
+  padding: 10px;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+/* Texts */
+.note {
+  font-size: 12px;
+  color: #555;
+  margin-bottom: 6px;
+}
+
+.sub-link {
+  font-size: 13px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 16px;
+}
+
+.signup-text {
+  font-size: 13px;
+  margin: 4px 0;
+}
+
+.signup-text a {
+  font-weight: bold;
+  color: #333;
+  text-decoration: none;
+}
+
+.signup-text a:hover {
+  text-decoration: underline;
+}
+
+.terms {
+  font-size: 11px;
+  color: #666;
+  margin-top: 20px;
+  line-height: 1.4;
+}
+
+.terms a {
+  color: #333;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.terms a:hover {
+  text-decoration: underline;
+}

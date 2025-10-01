@@ -12,7 +12,7 @@ const LeftBar = () => {
         <a href="/">
           <img src={icons.homeIcon} className="menuIcon" alt="" />
         </a>
-        <a href="/">
+        <a href="/create">
           <img src={icons.createIcon} className="menuIcon" alt="" />
         </a>
         <a href="/">
