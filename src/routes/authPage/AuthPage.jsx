@@ -4,7 +4,7 @@ import "./authPage.css";
 export default function AuthPage() {
   return (
     <div className="login-container">
-      <h2 className="login-title">Welcome to Pinterest</h2>
+      <h2 className="login-title">Welcome to Linterest</h2>
 
       {/* Email */}
       <div className="form-group">
