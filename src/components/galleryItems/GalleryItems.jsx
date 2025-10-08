@@ -12,7 +12,7 @@ const GalleryItems = ({ item }) => {
   return (
     <div className='galleryItem' style={{ gridRowEnd: `span ${Math.ceil(item.height / 100)}` }}>
       <PinImage src={item.media} w={372} h={optimizedHeight}/>
-      <Link to={`/pin/${item.id}`} className="overlay"></Link>
+      <Link to={`/pin/${item._id}`} className="overlay"></Link>
       <button className='saveButton'>
         Save
       </button>
